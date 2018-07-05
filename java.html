@@ -1,0 +1,16 @@
+<AllowedValuesDefinition>
+              <Script>
+                <Source>import sailpoint.object.*;
+import java.lang.*;
+import sailpoint.api.*;
+import java.util.*;
+ArrayList  spRtsNameList=new ArrayList ();
+ArrayList spRtsListObj=context.getObjects(SPRight.class);
+for(int i=0;i &lt; spRtsListObj.size();i++)
+{
+spRtsNameList.add(spRtsListObj.get(i).getName());
+}
+return spRtsNameList;
+</Source>
+              </Script>
+            </AllowedValuesDefinition>
